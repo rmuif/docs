@@ -12,8 +12,8 @@ jobs:
     - uses: actions/setup-node@v1
     - run: yarn install
     - run: |
-        git config user.email "git@phoqe.dev"
-        git config user.name "Linus Långberg"
+        git config --local user.email "git@phoqe.dev"
+        git config --local user.name "Linus Långberg"
     - run: yarn deploy
     env:
       GIT_USER: phoqe
