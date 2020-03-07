@@ -16,13 +16,18 @@ module.exports = {
       },
       links: [
         {
-          to: "docs/getting-started",
-          label: "Docs",
+          label: "Spectrum",
+          href: "https://spectrum.chat/rmuif",
           position: "right"
         },
         {
-          href: "https://github.com/rmuif/web",
+          label: "Discord",
+          href: "https://discord.gg/5Ann5C3",
+          position: "right"
+        },
+        {
           label: "GitHub",
+          href: "https://github.com/rmuif/web",
           position: "right"
         }
       ]
@@ -60,7 +65,7 @@ module.exports = {
             },
             {
               label: "Discord",
-              href: "https://discord.gg/PdRYuHW"
+              href: "https://discord.gg/5Ann5C3"
             }
           ]
         },
