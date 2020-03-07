@@ -1,91 +1,101 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  title: "RMUIF",
+  tagline:
+    "Supercharged version of Create React App with all the bells and whistles",
+  url: "https://docs.rmuif.com",
+  baseUrl: "/",
+  favicon: "img/favicon.ico",
+  organizationName: "rmuif",
+  projectName: "docs",
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: "RMUIF",
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: "Logo",
+        src: "img/logo.svg"
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          to: "docs/getting-started",
+          label: "Docs",
+          position: "right"
         },
-      ],
+        {
+          href: "https://github.com/rmuif/web",
+          label: "GitHub",
+          position: "right"
+        }
+      ]
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1',
+              label: "Getting Started",
+              to: "docs/getting-started"
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2',
+              label: "Scripts",
+              to: "docs/scripts"
             },
-          ],
+            {
+              label: "Roadmap",
+              to: "docs/roadmap"
+            }
+          ]
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "Stack Overflow",
+              href: "https://stackoverflow.com/questions/tagged/rmuif"
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: "Spectrum",
+              href: "https://spectrum.chat/rmuif"
             },
-          ],
+            {
+              label: "Discord",
+              href: "https://discord.gg/PdRYuHW"
+            }
+          ]
         },
         {
-          title: 'Social',
+          title: "Project",
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
+              label: "GitHub",
+              href: "https://github.com/rmuif/web"
+            }
+          ]
+        }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Linus Långberg`
     },
+    googleAnalytics: {
+      trackingID: "UA-141052606-2"
+    },
+    image: "img/logo.png"
   },
+  plugins: ["@docusaurus/plugin-google-analytics"],
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/rmuif/docs/edit/master",
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
+          customCss: require.resolve("./src/css/custom.css")
+        }
+      }
+    ]
+  ]
 };
