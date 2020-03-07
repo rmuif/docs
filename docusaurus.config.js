@@ -95,7 +95,8 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/rmuif/docs/edit/master",
           showLastUpdateAuthor: true,
-          showLastUpdateTime: true
+          showLastUpdateTime: true,
+          routeBasePath: ""
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css")
