@@ -16,11 +16,6 @@ module.exports = {
       },
       links: [
         {
-          label: "Spectrum",
-          href: "https://spectrum.chat/rmuif",
-          position: "right"
-        },
-        {
           label: "Discord",
           href: "https://discord.gg/5Ann5C3",
           position: "right"
@@ -58,10 +53,6 @@ module.exports = {
             {
               label: "Stack Overflow",
               href: "https://stackoverflow.com/questions/tagged/rmuif"
-            },
-            {
-              label: "Spectrum",
-              href: "https://spectrum.chat/rmuif"
             },
             {
               label: "Discord",
