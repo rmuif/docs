@@ -7,6 +7,7 @@ keywords:
   - rmuif
   - docs
   - roadmap
+image: img/illustrations/roadmap.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

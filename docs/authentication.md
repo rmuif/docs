@@ -7,6 +7,7 @@ keywords:
   - rmuif
   - docs
   - authentication
+image: img/illustrations/authentication.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

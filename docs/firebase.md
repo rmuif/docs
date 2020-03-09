@@ -7,6 +7,7 @@ keywords:
   - rmuif
   - docs
   - firebase
+image: img/illustrations/firebase.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

@@ -7,6 +7,7 @@ keywords:
   - rmuif
   - docs
   - sentry
+image: img/illustrations/sentry.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

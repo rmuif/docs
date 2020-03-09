@@ -7,6 +7,7 @@ keywords:
   - rmuif
   - docs
   - updates
+image: img/illustrations/updates.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

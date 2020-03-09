@@ -7,6 +7,7 @@ keywords:
   - rmuif
   - docs
   - deployment
+image: img/illustrations/deployment.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

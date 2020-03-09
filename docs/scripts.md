@@ -7,6 +7,7 @@ keywords:
   - rmuif
   - docs
   - scripts
+image: img/illustrations/scripts.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
