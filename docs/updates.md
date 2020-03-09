@@ -12,6 +12,10 @@ image: img/illustrations/updates.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+:::warning
+After opting to use Create React App templates as the main way of creating an app, the update method detailed below does no longer work. We’re working on a new way of updating your RMUIF app. **Do not pull down changes from `upstream/master`!**
+:::
+
 RMUIF is constantly evolving with general improvements and bug fixes included in every release. It doesn’t follow a strict versioning scheme like regular frameworks do with Semantic Versioning. RMUIF is more than just a framework, it’s a template and a starting point for your app. The versioning system we use is similar to Romantic Versioning.
 
 <img alt="Illustration" src={useBaseUrl('img/illustrations/updates.svg')} />
