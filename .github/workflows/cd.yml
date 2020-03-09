@@ -1,0 +1,22 @@
+name: CD
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+    - run: |
+        git config --global user.name "Linus Långberg"
+        git config --global user.email "git@phoqe.dev"
+        echo "machine github.com login $GIT_USER password ${{ secrets.GITHUB_TOKEN }}" > ~/.netrc
+    - run: yarn install
+    - run: yarn deploy
+      env:
+        CI: true
+        GIT_USER: phoqe
