@@ -32,7 +32,7 @@ It is your responsibility to read through the release notes before updating and 
 The first step in updating the base template is to use read through the release notes. When you’ve done that, you can use `git` to add the official RMUIF repository as an upstream:
 
 ```sh
-git remote add upstream https://github.com/phoqe/rmuif.git
+git remote add upstream https://github.com/rmuif/web.git
 ```
 
 Then you can use `fetch` to get all the references from the repository:
