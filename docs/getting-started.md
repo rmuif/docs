@@ -7,6 +7,7 @@ keywords:
   - rmuif
   - docs
   - getting started
+image: img/illustrations/getting-started.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
