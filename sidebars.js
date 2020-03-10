@@ -16,7 +16,7 @@ module.exports = {
     {
       type: "category",
       label: "Maintenance",
-      items: ["authentication", "authorization", "pages", "updates"]
+      items: ["authentication", "authorization", "pages"]
     },
     {
       type: "doc",
