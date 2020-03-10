@@ -70,7 +70,7 @@ module.exports = {
           ]
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Linus Långberg`
+      copyright: `Copyright © ${new Date().getFullYear()} RMUIF`
     },
     googleAnalytics: {
       trackingID: "UA-141052606-2"
