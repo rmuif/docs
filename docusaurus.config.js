@@ -87,7 +87,7 @@ module.exports = {
           editUrl: "https://github.com/rmuif/docs/edit/master",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          routeBasePath: "/"
+          routeBasePath: ""
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css")
