@@ -38,7 +38,7 @@ They use sensible defaults and are a great fit for both new and existing users.
 
 ## Creating an app
 
-With Create React App, you can now start a new app from the RMUIF template by appending `--template rmuif` to the creation command:
+You can start a new app from the RMUIF template with Create React App by appending `--template rmuif` to the creation command:
 
 ```sh
 npx create-react-app my-app --template rmuif
