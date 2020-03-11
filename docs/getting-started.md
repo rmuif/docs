@@ -66,5 +66,5 @@ Check the developer console for any errors and warnings, if it’s empty and eve
 
 1. Use Google to search for any errors or warnings, it might be very obvious.
 2. Look for similar issues on the repository’s page on GitHub.
-3. Ask a question on [Stack Overflow](https://stackoverflow.com/questions/tagged/rmuif) or have a chat with us on [Discord](https://discord.gg/5Ann5C3), we’re always happy to help!
-4. Create an issue on GitHub using the 'Bug Report' template.
+3. Have a chat with us on [Discord](https://discord.gg/5Ann5C3) or ask a question on [Stack Overflow](https://stackoverflow.com/questions/tagged/rmuif), we’re always happy to help!
+4. Create an issue on GitHub using the [Report a bug template](https://github.com/rmuif/web/issues/new?template=bug_report.md).
