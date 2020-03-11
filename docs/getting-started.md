@@ -22,24 +22,16 @@ import TabItem from '@theme/TabItem';
 There is an RMUIF template for Create React App, you can use it with the `--template` option when creating an app:
 
 ```sh
-npx create-react-app <project-directory> --template rmuif
+npx create-react-app my-app --template rmuif
 ```
-
-:::note
-Replace `<project-directory>` with your app’s name, e.g. `rmuif` or `my-app`.
-:::
 
 ## Starting the app
 
 Before you can start the app, you need to be inside your project’s directory. This command will change the current working directory to your project’s directory:
 
 ```sh
-cd <project-directory>
+cd my-app
 ```
-
-:::note
-Replace `<project-directory>` with the same name you used when creating the app.
-:::
 
 Make sure everything works as expected before continuing with the configuration, this command will start the app on http://localhost:3000 (a different port is used if 3000 is already in use) in your default web browser:
 
@@ -75,4 +67,4 @@ Check the developer console for any errors and warnings, if it’s empty and eve
 1. Use Google to search for any errors or warnings, it might be very obvious.
 2. Look for similar issues on the repository’s page on GitHub.
 3. Ask a question on [Stack Overflow](https://stackoverflow.com/questions/tagged/rmuif) or have a chat with us on [Discord](https://discord.gg/5Ann5C3), we’re always happy to help!
-4. Create an issue on GitHub using the ”Bug Report“ template.
+4. Create an issue on GitHub using the 'Bug Report' template.
