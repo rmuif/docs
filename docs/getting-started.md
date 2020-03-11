@@ -8,6 +8,7 @@ keywords:
   - docs
   - getting started
 image: img/illustrations/getting-started.png
+hide_title: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -15,15 +16,43 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<img alt="Illustration" src={useBaseUrl('img/illustrations/getting-started.svg')} />
+<div style={{ textAlign: "center" }}>
+  <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/getting-started.svg')} />
+  <h1>Getting Started</h1>
+  <p>
+    It’s easy to create an app, especially if you’re already familiar with Create React App.
+  </p>
+</div>
+
+## Quickstart
+
+If you’ve used RMUIF before or just want to get started quickly, run these commands:
+
+```sh
+npx create-react-app my-app --template rmuif
+cd my-app
+yarn start
+```
+
+They use sensible defaults and are a great fit for both new and existing users.
 
 ## Creating an app
 
-There is an RMUIF template for Create React App, you can use it with the `--template` option when creating an app:
+You can start a new app from the RMUIF template with Create React App by appending `--template rmuif` to the creation command:
 
 ```sh
 npx create-react-app my-app --template rmuif
 ```
+
+:::info
+
+When you create a new app, the CLI will use `yarn` to install dependencies (when available). If you have `yarn` installed, but would prefer to use `npm`, you can append `--use-npm` to the creation command:
+
+```sh
+npx create-react-app my-app --template rmuif --use-npm
+```
+
+:::
 
 ## Starting the app
 
@@ -33,15 +62,9 @@ Before you can start the app, you need to be inside your project’s directory. 
 cd my-app
 ```
 
-Make sure everything works as expected before continuing with the configuration, this command will start the app on http://localhost:3000 (a different port is used if 3000 is already in use) in your default web browser:
+This command will start the app on http://localhost:3000 in your default web browser:
 
-<Tabs
-defaultValue="yarn"
-values={[
-{ label: 'yarn', value: 'yarn' },
-{ label: 'npm', value: 'npm' }
-]
-}>
+<Tabs defaultValue="yarn" values={[{ label: "yarn", value: "yarn" },{ label: "npm", value: "npm" }]}>
 <TabItem value="yarn">
 
 ```sh
@@ -59,12 +82,14 @@ npm start
 </Tabs>
 
 :::tip
-You can override your default web browser by using the `BROWSER` environmment variable, e.g. `export BROWSER=safari` if you want to use Safari. Depending on your setup, it might be ideal to create a `.env.local` file where you define environment variables unique to your local environment.
+
+You can override your default web browser by using the `BROWSER` environmment variable, e.g. `BROWSER=safari` if you want to use Safari. Depending on your setup, it might be ideal to create a `.env.local` file where you define environment variables unique to your local environment.
+
 :::
 
-Check the developer console for any errors and warnings, if it’s empty and everything’s working you can go ahead to the configuration page. However, if something’s not working out for you, you could try following these steps:
+Check the developer console of your browser for any errors and warnings, if it’s empty and everything’s working you can go ahead to the next page. However, if something’s not working, you could try following these steps:
 
-1. Use Google to search for any errors or warnings, it might be very obvious.
+1. Use Google to search for any errors or warnings.
 2. Look for similar issues on the repository’s page on GitHub.
 3. Have a chat with us on [Discord](https://discord.gg/5Ann5C3) or ask a question on [Stack Overflow](https://stackoverflow.com/questions/tagged/rmuif), we’re always happy to help!
 4. Create an issue on GitHub using the [Report a bug](https://github.com/rmuif/web/issues/new?template=bug_report.md) template.
