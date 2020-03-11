@@ -19,7 +19,7 @@ import TabItem from '@theme/TabItem';
 
 ## Creating an app
 
-There is an RMUIF template for Create React App, you can use it with the `--template` option when creating an app:
+There is an RMUIF template available for Create React App, you can use it with the `--template` option when creating an app:
 
 ```sh
 npx create-react-app my-app --template rmuif
