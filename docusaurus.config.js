@@ -51,10 +51,6 @@ module.exports = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/rmuif"
-            },
-            {
               label: "Discord",
               href: "https://discord.gg/5Ann5C3"
             }

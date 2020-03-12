@@ -91,5 +91,5 @@ Check the developer console of your browser for any errors and warnings, if it�
 
 1. Use Google to search for any errors or warnings.
 2. Look for similar issues on the repository’s page on GitHub.
-3. Have a chat with us on [Discord](https://discord.gg/5Ann5C3) or ask a question on [Stack Overflow](https://stackoverflow.com/questions/tagged/rmuif), we’re always happy to help!
+3. Have a chat with us on [Discord](https://discord.gg/5Ann5C3), we’re always happy to help!
 4. Create an issue on GitHub using the [Report a bug](https://github.com/rmuif/web/issues/new?template=bug_report.md) template.
