@@ -22,10 +22,6 @@ There are more features coming to RMUIF, some are documented here, more might be
 
 Provide an example featuring CRUD operations, e.g. an article page.
 
-### [Illustrations for empty states](https://github.com/rmuif/web/issues/462)
-
-Replace the icon and text combination for empty states with illustrations.
-
 ### [Improve accessibility](https://github.com/rmuif/web/issues/429)
 
 https://reactjs.org/docs/accessibility.html
