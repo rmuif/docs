@@ -8,6 +8,7 @@ keywords:
   - docs
   - pages
 image: img/illustrations/pages.png
+hide_title: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -15,13 +16,17 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-RMUIF uses React Router as its routing solution. A route is the entry point for a page, e.g., the `/user/:userId` route is for the `UserPage`, which resolves the user by getting the `userId` URL parameter from React Router’s `useParams();`.
-
-<img alt="Illustration" src={useBaseUrl('img/illustrations/pages.svg')} />
+<div style={{ textAlign: "center" }}>
+  <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/pages.svg')} />
+  <h1>Pages</h1>
+  <p>
+    RMUIF uses React Router as its routing solution
+  </p>
+</div>
 
 ## Creating a page
 
-A page in RMUIF is wrapped in a `MuiThemeProvider` and `ErrorBoundary`, where the former is for theming components with the correct theme, and the latter for catching errors in a user-friendly way. The content of a page uses `CssBaseline` from Material-UI for basic styling.
+A page wraps a `MuiThemeProvider` and `ErrorBoundary`, the former is for theming components with the correct theme, and the latter for catching errors in a user-friendly way. The content of a page uses `CssBaseline` from Material-UI for basic styling.
 
 ### Defining the route
 
@@ -74,17 +79,17 @@ import NotFoundPage from "../NotFoundPage";
 </TabItem>
 </Tabs>
 
-The `/messages` route requires the user to be signed in to access the page, hence the ternary inside the route. If you want everyone to be able to access your route, you can just include the page like how it’s done for `NotFoundPage`.
+The `/messages` route requires the user to be signed in to access the page, hence the ternary inside the route. If you want everyone to be able to access your route, you can include the page like `NotFoundPage`.
 
 :::note
 
-URL parameters are placeholders in the URL that begins with a colon `:`, like the `:userId` parameter in the `/user/:userId` route. A similar convention is used for matching dynamic segments in other popular frameworks like Rails and Express.
+URL parameters are placeholders in the URL that begins with a colon, like the `:userId` parameter in the `/user/:userId` route. A similar convention exists for matching dynamic segments in other popular frameworks like Rails and Express.
 
 :::
 
 ### Creating the files
 
-After you’ve defined the route, you can create the actual page. The first step is to create a directory for your page, the structure should look like:
+After you’ve defined the route, you can create the actual page. The first step is to create a directory for your page. The structure should look like:
 
 - /src
   - /MessagesPage
@@ -94,11 +99,11 @@ After you’ve defined the route, you can create the actual page. The first step
 
 :::info
 
-Page components are located in the `/src` directory of your project.
+Page components are in the `/src` directory of your project.
 
 :::
 
-There are three files in total and they look like:
+There are three files in total, and they look like:
 
 <Tabs
 defaultValue="index.js"
@@ -110,7 +115,7 @@ values={[
 }>
 <TabItem value="index.js">
 
-This file’s main purpose is to make it easier to import your page component. It sets the default export value to your actual component, so you don’t have to write your component name two times when importing it.
+This file’s purpose is to make it easier to import your page component. It sets the default export value to your actual component, so you don’t have to write your component name two times when importing it.
 
 ```jsx
 export { default } from "./MessagesPage";
@@ -160,4 +165,4 @@ it("renders without crashing", () => {
 </TabItem>
 </Tabs>
 
-Now when you navigate to `/messages` you will see your new page, displaying ”Messages“ in the center.
+Now when you navigate to `/messages` you see your new page, displaying ”Messages“ in the center.
