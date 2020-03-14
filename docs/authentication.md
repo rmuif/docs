@@ -90,7 +90,7 @@ return (
 
 ## Protecting routes
 
-You might want to require the user to be authenticated to be able to access certain routes, e.g. a settings page. You can take a look at the existing definitions in `Router`, where the `user` object is required:
+You might want to require the user to be authenticated to be able to access certain routes, e.g., a settings page. You can take a look at the existing definitions in `Router`, where the `user` object is required:
 
 ```jsx
 <Route path="/user/:userId">
@@ -106,7 +106,7 @@ The value of the `user` object indicates whether or not a user is signed in. If 
 
 You can use the [Firebase Console](https://console.firebase.google.com) for basic user management but it can be hard to use when performing operations such as deleting all of your users. RMUIF has its own tools for managing individual users and users at scale, you can find these in the `/tools` directory of your project.
 
-The `user` program is for managing users individually, e.g. if you want to create, update, and delete a user. The `users` program is for performing operations on all users, e.g. listing or deleting all users.
+The `user` program is for managing users individually, e.g., if you want to create, update, and delete a user. The `users` program is for performing operations on all users, e.g., listing or deleting all users.
 
 ### Creating a user
 
@@ -169,7 +169,7 @@ If you don’t provide a `uid`, Firebase will generate a random one for you. A c
 
 ### Getting a user’s data
 
-You can use the `user` tool to quickly get information from a user, e.g. their e-mail address or display name. Again, it’s very simple to use:
+You can use the `user` tool to quickly get information from a user, e.g., their e-mail address or display name. Again, it’s very simple to use:
 
 <Tabs
 defaultValue="yarn"
@@ -220,7 +220,7 @@ npm run user -e get <email>
 </Tabs>
 
 :::tip
-The `-e` option is available for all commands with the `uid` argument in the `user` tool, i.e. you can use it when getting, updating, and deleting a user.
+The `-e` option is available for all commands with the `uid` argument in the `user` tool, i.e., you can use it when getting, updating, and deleting a user.
 :::
 
 An example of getting information from a user with the user ID `john`:
@@ -540,7 +540,7 @@ npm run user delete john
 </Tabs>
 
 :::warning
-Deleting a user will also delete any data associated to them, e.g. their documents in Cloud Firestore and avatar in Cloud Storage.
+Deleting a user will also delete any data associated to them, e.g., their documents in Cloud Firestore and avatar in Cloud Storage.
 :::
 
 ### Deleting all users

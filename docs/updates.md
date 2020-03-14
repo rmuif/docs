@@ -53,5 +53,5 @@ git merge upstream/master
 ```
 
 :::note
-Make sure you’re on the main development branch, e.g. `master` or `develop`, depending on your setup, when merging in the changes from the upstream repository.
+Make sure you’re on the main development branch, e.g., `master` or `develop`, depending on your setup, when merging in the changes from the upstream repository.
 :::

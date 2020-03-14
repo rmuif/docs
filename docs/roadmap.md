@@ -20,7 +20,7 @@ There are more features coming to RMUIF, some are documented here, more might be
 
 ### [CRUD example](https://github.com/rmuif/web/issues/420)
 
-Provide an example featuring CRUD operations, e.g. an article page.
+Provide an example featuring CRUD operations, e.g., an article page.
 
 ### [Improve accessibility](https://github.com/rmuif/web/issues/429)
 
@@ -60,7 +60,7 @@ Add user-to-user interactions such as ”Add friend“ and ”Block user“.
 
 ### Administrative actions
 
-Add administrative actions in the app for users with the `admin` role, e.g. on a user’s page, the options ”Ban“ and ”Remove“ are available.
+Add administrative actions in the app for users with the `admin` role, e.g., on a user’s page, the options ”Ban“ and ”Remove“ are available.
 
 ## Version 4.x
 

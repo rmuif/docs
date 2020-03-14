@@ -30,7 +30,7 @@ This script will run the app in the development mode. It will automatically open
 
 You have to restart the development server if you make any changes to the configuration in `package.json` as members of the `config` object are forwarded to the app through the `.env` file and they’re only initialized on start. The rule of thumb is that if you don’t see the change, restart the development server.
 
-You can override the default web browser with the environment variable `BROWSER`. If you always want to override it, consider creating a `.env.local` file in the root directory where you initialize the variable, e.g. for Safari:
+You can override the default web browser with the environment variable `BROWSER`. If you always want to override it, consider creating a `.env.local` file in the root directory where you initialize the variable, e.g., for Safari:
 
 <Tabs
 defaultValue=".env.local"
@@ -49,7 +49,7 @@ BROWSER=safari
 
 :::info
 
-The name of a web browser depends on the platform, e.g. Google Chrome is `chrome` on Windows, `google chrome` on macOS, and `google-chrome` on Linux. If you need to pass any arguments to the web browser, you can use the `BROWSER_ARGS` environment variable.
+The name of a web browser depends on the platform, e.g., Google Chrome is `chrome` on Windows, `google chrome` on macOS, and `google-chrome` on Linux. If you need to pass any arguments to the web browser, you can use the `BROWSER_ARGS` environment variable.
 
 :::
 
@@ -67,7 +67,7 @@ This script will analyze your `build` directory, it determines which file each b
 
 :::caution
 
-You need to build the app before using this script, i.e. run `build` before running `analyze`.
+You need to build the app before using this script, i.e., run `build` before running `analyze`.
 
 :::
 

@@ -58,7 +58,7 @@ It exposes the roles of a user in the `roles` state variable which is often pass
 
 ## Default roles
 
-There are two roles by default: `admin` and `premium`. The `admin` role grants the user unrestricted access to all data in Cloud Firestore, i.e. users with the role can view and manage other users. The `premium` role, however, doesn’t do anything at the moment. It serves as a placeholder for both RMUIF and you. If any premium functionality would be added, at some point in the future, this role would be used.
+There are two roles by default: `admin` and `premium`. The `admin` role grants the user unrestricted access to all data in Cloud Firestore, i.e., users with the role can view and manage other users. The `premium` role, however, doesn’t do anything at the moment. It serves as a placeholder for both RMUIF and you. If any premium functionality would be added, at some point in the future, this role would be used.
 
 ## Protecting content
 
@@ -96,7 +96,7 @@ Normally you would need to setup the Firebase Admin SDK and hack together someth
 
 ### Setting a user’s roles
 
-If you need to set a user’s roles, we’ve got you covered. Although, note that the word _set_ was used, instead of _add_. You are **setting** the user’s roles, not **adding** a role, i.e. this command will overwrite the user’s existing roles:
+If you need to set a user’s roles, we’ve got you covered. Although, note that the word _set_ was used, instead of _add_. You are **setting** the user’s roles, not **adding** a role, i.e., this command will overwrite the user’s existing roles:
 
 <Tabs
 defaultValue="yarn"
@@ -171,7 +171,7 @@ npm run roles set john admin
 </TabItem>
 </Tabs>
 
-By the way, the `roles` argument is comma-separated, i.e. you can set multiple roles at once:
+By the way, the `roles` argument is comma-separated, i.e., you can set multiple roles at once:
 
 <Tabs
 defaultValue="yarn"

@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-RMUIF uses React Router as its routing solution. A route is the entry point for a page, e.g. the `/user/:userId` route is for the `UserPage`, which resolves the user by getting the `userId` URL parameter from React Router’s `useParams();`.
+RMUIF uses React Router as its routing solution. A route is the entry point for a page, e.g., the `/user/:userId` route is for the `UserPage`, which resolves the user by getting the `userId` URL parameter from React Router’s `useParams();`.
 
 <img alt="Illustration" src={useBaseUrl('img/illustrations/pages.svg')} />
 
