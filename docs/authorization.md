@@ -24,8 +24,6 @@ import TabItem from '@theme/TabItem';
   </p>
 </div>
 
-<img alt="Illustration" src={useBaseUrl('img/illustrations/authorization.svg')} />
-
 ## Accessibility of roles
 
 Roles are accessible through the user’s authentication token, in the custom claims object. The actual roles is an array of strings, denoting which roles the user has. If the user belongs to the `admin` role, the roles array looks like: `["admin"]`.

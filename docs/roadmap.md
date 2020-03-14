@@ -8,6 +8,7 @@ keywords:
   - docs
   - roadmap
 image: img/illustrations/roadmap.png
+hide_title: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
