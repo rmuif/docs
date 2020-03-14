@@ -62,6 +62,14 @@ module.exports = {
             {
               label: "GitHub",
               href: "https://github.com/rmuif/web"
+            },
+            {
+              label: "Contributing",
+              href: "https://github.com/rmuif/web/blob/master/CONTRIBUTING.md"
+            },
+            {
+              label: "Security",
+              href: "https://github.com/rmuif/web/blob/master/SECURITY.md"
             }
           ]
         }
