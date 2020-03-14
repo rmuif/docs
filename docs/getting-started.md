@@ -26,15 +26,11 @@ import TabItem from '@theme/TabItem';
 
 ## Quickstart
 
-If you’ve used RMUIF before or just want to get started quickly, run these commands:
-
 ```sh
 npx create-react-app my-app --template rmuif
 cd my-app
 yarn start
 ```
-
-They use sensible defaults and are a great fit for both new and existing users.
 
 ## Creating an app
 
