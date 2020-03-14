@@ -8,6 +8,7 @@ keywords:
   - docs
   - sentry
 image: img/illustrations/sentry.png
+hide_title: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -15,15 +16,19 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Sentry is of great help when you put your app into the hands of your users. It’s like Firebase Crash Reporting, but for the web. Errors that users may experience are sent to your account immediately and automatically.
-
-<img alt="Illustration" src={useBaseUrl('img/illustrations/sentry.svg')} />
+<div style={{ textAlign: "center" }}>
+  <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/sentry.svg')} />
+  <h1>Sentry</h1>
+  <p>
+    Sentry is of great help when you put your app into the hands of your users.
+  </p>
+</div>
 
 ## Configure the SDK
 
-After you’ve completed setting up a project in Sentry, you’ll be given a Data Source Name (DSN). It’s a representation of the configuration required by Sentry SDKs. It consists of a few pieces, including the protocol, public key, server address, and project identifier.
+After you’ve completed setting up a project in Sentry, you’ll get a Data Source Name (DSN). It’s a representation of the configuration required by Sentry SDKs. It consists of a few pieces, including the protocol, public key, server address, and project identifier.
 
-You can set the DSN for your project in the `config` object of `package.json`, just replace `https://<key>@sentry.io/<project>` with your own DSN:
+You can set the DSN for your project in the `config` object of `package.json`, replace `https://<key>@sentry.io/<project>` with your DSN:
 
 <Tabs
 defaultValue="package.json"
@@ -76,6 +81,8 @@ One way to break your app is to call an undefined function from anywhere in your
 myUndefinedFunction();
 ```
 
-:::info
+:::tip
+
 You can verify the function caused an error by checking your browser console.
+
 :::

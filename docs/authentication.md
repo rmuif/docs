@@ -8,6 +8,7 @@ keywords:
   - docs
   - authentication
 image: img/illustrations/authentication.png
+hide_title: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -15,13 +16,17 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-RMUIF uses Firebase Authentication in conjunction with Cloud Firestore to create, sign in, and manage users. Authentication is the most integral part of the app and can be seen as the foundation. Cloud Firestore is used to store user data, both public and private, like a user’s first name and the last time they changed their password.
-
-<img alt="Illustration" src={useBaseUrl('img/illustrations/authentication.svg')} />
+<div style={{ textAlign: "center" }}>
+  <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/authentication.svg')} />
+  <h1>Authentication</h1>
+  <p>
+    RMUIF uses Firebase Authentication in conjunction with Cloud Firestore to create, sign in, and manage users.
+  </p>
+</div>
 
 ## Users and their data
 
-A user is made up of three sources of data: the Firebase Authentication user account and the public and private user data in Cloud Firestore. When a user creates an account, they use the following structure in Cloud Firestore:
+A user is consists of three sources of data: the Firebase Authentication user account and the public and private user data in Cloud Firestore. When a user creates an account, they use the following structure in Cloud Firestore:
 
 - `users`
   - `userId`
@@ -36,7 +41,7 @@ A user is made up of three sources of data: the Firebase Authentication user acc
   - `userId`
     - `lastPasswordChange`
 
-The `userId` key is always the same as the `uid` property of a Firebase user account. In fact, `uid` is short for user ID, but we have chosen to name the key `userId` for a more welcoming terminology. For example, the representation of a user in Cloud Firestore could look like:
+The `userId` key is always the same as the `uid` property of a Firebase user account. `uid` is short for user ID, but we have chosen to name the key `userId` for a more welcoming terminology. For example, the representation of a user in Cloud Firestore could look like:
 
 - `users`
   - `WZwxotRnOrWdnqCx8Vf9tfbqnTr2`
@@ -63,15 +68,17 @@ RMUIF supports multiple authentication providers in addition to password-based s
 - Twitter
 - Yahoo
 
-You can easily add more authentication providers, the support we provide for existing ones are essentially the definitions and some testing for quality assurance. In theory, the only thing you need to change is the `authProviders.js` file in the `/src` directory. From there, you can add or remove existing providers. The authentication service only needs a `providerId` to initiate a sign-in.
+You can easily add more authentication providers, the support we provide for existing ones are mostly the definitions and some testing for quality assurance. In theory, the only thing you need to change is the `authProviders.js` file in the `/src` directory. From there, you can add or remove existing providers. The authentication service only needs a `providerId` to initiate a sign-in.
 
 :::note
-Users can tie multiple authentication providers to their account by linking them in the ”Links“ tab in ”Settings“.
+
+Users can tie multiple authentication providers to their account by linking them in the **Links** tab in **Settings**.
+
 :::
 
 ## Protecting content
 
-If you have access to the `user` object, you can check if the user is signed in or not. For example, in `HomeContent`, where we determine what to display based on whether or not the user is signed in:
+If you have access to the `user` object, you can check if the user is signed in or not. For example, in `HomeContent`, where we determine what to display based on whether or not the user exists:
 
 ```jsx
 const { user } = this.props;
@@ -90,7 +97,7 @@ return (
 
 ## Protecting routes
 
-You might want to require the user to be authenticated to be able to access certain routes, e.g. a settings page. You can take a look at the existing definitions in `Router`, where the `user` object is required:
+You might want to require the user to authenticate to be able to access specific routes, e.g., a settings page. You can take a look at the existing definitions in `Router`, where the `user` object is required:
 
 ```jsx
 <Route path="/user/:userId">
@@ -99,18 +106,20 @@ You might want to require the user to be authenticated to be able to access cert
 ```
 
 :::info
-The value of the `user` object indicates whether or not a user is signed in. If the user is signed in, it will be populated, otherwise it will be `null`.
+
+The value of the `user` object indicates whether or not a user is signed in. If the user is signed in, it is populated; otherwise, it is `null`.
+
 :::
 
 ## Managing users
 
-You can use the [Firebase Console](https://console.firebase.google.com) for basic user management but it can be hard to use when performing operations such as deleting all of your users. RMUIF has its own tools for managing individual users and users at scale, you can find these in the `/tools` directory of your project.
+You can use the [Firebase Console](https://console.firebase.google.com) for essential user management, but it can be hard to use when performing operations such as deleting all of your users. RMUIF has its tools for managing individual users and users at scale. You can find these in the `/tools` directory of your project.
 
-The `user` program is for managing users individually, e.g. if you want to create, update, and delete a user. The `users` program is for performing operations on all users, e.g. listing or deleting all users.
+The `user` program is for managing users individually, e.g., if you want to create, update, and delete a user. The `users` program is for performing operations on all users, e.g., listing or deleting all users.
 
 ### Creating a user
 
-You don’t need to start the app if you want to create a new user. There are some cases where you would want to create a test or system user, and from the `user` tool you can do that. You can even set more properties than you can do from the Firebase Console. The following command will start a wizard where you can create your user:
+You don’t need to start the app if you want to create a new user. There are some cases where you would want to create a test or system user, and from the `user` tool you can do that. You can even set more properties than you can do from the Firebase Console. The following command starts a wizard where you can create your user:
 
 <Tabs
 defaultValue="yarn"
@@ -164,12 +173,14 @@ Here’s an example of what it looks like:
 ```
 
 :::note
-If you don’t provide a `uid`, Firebase will generate a random one for you. A custom `uid` is useful if you want to create a system or test user. That way, you always know the ID of the user and don’t need to perform any querying whenever you need that specific user.
+
+If you don’t provide a `uid`, Firebase generates a random one for you. A custom `uid` is useful if you want to create a system or test user. That way, you always know the ID of the user and don’t need to perform any querying whenever you need that specific user.
+
 :::
 
 ### Getting a user’s data
 
-You can use the `user` tool to quickly get information from a user, e.g. their e-mail address or display name. Again, it’s very simple to use:
+You can use the `user` tool to quickly get information from a user, e.g., their e-mail address or display name. Again, it’s very simple to use:
 
 <Tabs
 defaultValue="yarn"
@@ -194,7 +205,7 @@ npm run user get <uid>
 </TabItem>
 </Tabs>
 
-That’s nice, if you know the ID of a user. But what if you don’t? You can use the `--email` or `-e` option to use an e-mail address instead of a user ID:
+That’s nice if you know the ID of a user. But what if you don’t? You can use the `--email` or `-e` option to use an e-mail address instead of a user ID:
 
 <Tabs
 defaultValue="yarn"
@@ -220,7 +231,9 @@ npm run user -e get <email>
 </Tabs>
 
 :::tip
-The `-e` option is available for all commands with the `uid` argument in the `user` tool, i.e. you can use it when getting, updating, and deleting a user.
+
+The `-e` option is available for all commands with the `uid` argument in the `user` tool, i.e., you can use it when getting, updating, and deleting a user.
+
 :::
 
 An example of getting information from a user with the user ID `john`:
@@ -293,7 +306,7 @@ npm run users list
 </TabItem>
 </Tabs>
 
-The tool will paginate the users if there are many, a table represents a page. An example output for this command looks like:
+The tool paginates the users if there are many, a table represents a page. Example output for this command looks like:
 
 ```sh
 ┌──────┬──────────────┬───────────────┬─────────────┬──────────┬──────────┐
@@ -304,12 +317,14 @@ The tool will paginate the users if there are many, a table represents a page. A
 ```
 
 :::info
-The output will be very big if you have a lot of users. To ensure proper formatting, you should maximize the window of the shell you’re using.
+
+The output is enormous if you have many users. To ensure proper formatting, you should maximize the window of the shell you’re using.
+
 :::
 
 ### Updating a user
 
-You can also use the tool to update an existing user, this command will start a wizard where you choose which values you want to change:
+You can also use the tool to update an existing user. This command starts a wizard where you choose which values you want to change:
 
 <Tabs
 defaultValue="yarn"
@@ -359,7 +374,7 @@ npm run user update john
 </TabItem>
 </Tabs>
 
-The wizard comes with the current values as default. If you don’t want to change the selected value, you can just continue. But let’s say we wanted to change the display name from `john` to `doe`, that would look like:
+The wizard comes with the current values as default. If you don’t want to change the selected value, you can continue. But let’s say we wanted to change the display name from `john` to `doe`, that would look like:
 
 ```sh
 ? email: john@doe.com
@@ -385,7 +400,7 @@ The wizard comes with the current values as default. If you don’t want to chan
 
 ### Banning a user
 
-If you’re ever in need of preventing someone from accessing your app, you can disable or ”ban“ their account. This will block them from signing in. The command, is as usual, really simple:
+If you’re ever in need of preventing someone from accessing your app, you can disable or ”ban“ their account. This command blocks them from signing in. The command, is as usual, straightforward:
 
 <Tabs
 defaultValue="yarn"
@@ -437,7 +452,7 @@ npm run user ban john
 
 ### Unbanning a user
 
-If you want to enable a user again, you can lift their ban. This will allow them to sign in again. Use this clean command:
+If you want to enable a user again, you can lift their ban. This command allows them to sign in again. Use this clean command:
 
 <Tabs
 defaultValue="yarn"
@@ -489,7 +504,7 @@ npm run user unban john
 
 ### Deleting a user
 
-Deleting a user is a dangerous action as it implies serious consequences for the affected user. Think twice before using this command. You can use this command like:
+Deleting a user is a dangerous activity as it implies severe consequences for the affected user. Think twice before using this command. You can use this command like:
 
 <Tabs
 defaultValue="yarn"
@@ -540,12 +555,14 @@ npm run user delete john
 </Tabs>
 
 :::warning
-Deleting a user will also delete any data associated to them, e.g. their documents in Cloud Firestore and avatar in Cloud Storage.
+
+Deleting a deletes any data associated with them, e.g., their documents in Cloud Firestore and avatar in Cloud Storage.
+
 :::
 
 ### Deleting all users
 
-This is a very dangerous command to execute, it will delete all users and their data in your app. You might have to use this command multiple times as Firebase limits the number of deletions that can be performed. The tool will tell you if the limit has been exceeded. We are working to improve this tool further, but until now that seems to be the only viable solution. You have to use the `users` tool when executing this command:
+This command is very dangerous to execute. It deletes all users and their data in your app. You might have to use this command multiple times as Firebase limits the number of deletions. The tool will tell you if the limit has been exceeded. We are working to improve this tool further, but until now, that seems to be the only viable solution. You have to use the `users` tool when executing this command:
 
 <Tabs
 defaultValue="yarn"
@@ -570,12 +587,14 @@ npm run users delete
 </TabItem>
 </Tabs>
 
-You will be prompted with a confirmation before the deletion process starts:
+You are prompted with a confirmation before the deletion process starts:
 
 ```sh
 ? Delete all users? (y/N)
 ```
 
 :::warning
-This command is very dangerous, it will delete all users and their data in your app. Think twice before using it!
+
+This command is very dangerous. It deletes all users and their data in your app. Please think twice before using it!
+
 :::
