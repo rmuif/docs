@@ -77,7 +77,9 @@ import NotFoundPage from "../NotFoundPage";
 The `/messages` route requires the user to be signed in to access the page, hence the ternary inside the route. If you want everyone to be able to access your route, you can just include the page like how it’s done for `NotFoundPage`.
 
 :::note
+
 URL parameters are placeholders in the URL that begins with a colon `:`, like the `:userId` parameter in the `/user/:userId` route. A similar convention is used for matching dynamic segments in other popular frameworks like Rails and Express.
+
 :::
 
 ### Creating the files
@@ -91,7 +93,9 @@ After you’ve defined the route, you can create the actual page. The first step
     - MessagesPage.test.js
 
 :::info
+
 Page components are located in the `/src` directory of your project.
+
 :::
 
 There are three files in total and they look like:

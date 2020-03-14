@@ -8,6 +8,7 @@ keywords:
   - docs
   - sentry
 image: img/illustrations/sentry.png
+hide_title: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

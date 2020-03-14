@@ -53,7 +53,9 @@ authentication
 ```
 
 :::note
+
 It exposes the roles of a user in the `roles` state variable which is often passed down as props to child components.
+
 :::
 
 ## Default roles
@@ -87,7 +89,9 @@ You can also use the API to restrict users from accessing a specific route. Take
 ```
 
 :::note
+
 The `Redirect` part will send the user to the `/` route if the user isn’t signed in and an administrator.
+
 :::
 
 ## The `roles` tool
@@ -197,7 +201,9 @@ npm run roles set john admin,premium
 </Tabs>
 
 :::warning
+
 As stated before, the `set` command will overwrite any existing roles. There might come an update later, adding an `add` command that will take into account any existing roles, but it’s not a priority at the moment. As the saying goes: know what you do before you do.
+
 :::
 
 ### Getting a user’s roles
@@ -313,5 +319,7 @@ npm run roles remove john
 </Tabs>
 
 :::warning
+
 Depending on your setup, removing a user’s roles can make them lose access to protected content. Make sure that this is your intention.
+
 :::

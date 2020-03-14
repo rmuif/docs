@@ -13,7 +13,9 @@ image: img/illustrations/updates.png
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::warning
+
 After opting to use Create React App templates as the main way of creating an app, the update method detailed below does no longer work. We’re working on a new way of updating your RMUIF app. **Do not pull down changes from `upstream/master`!**
+
 :::
 
 RMUIF is constantly evolving with general improvements and bug fixes included in every release. It doesn’t follow a strict versioning scheme like regular frameworks do with Semantic Versioning. RMUIF is more than just a framework, it’s a template and a starting point for your app. The versioning system we use is similar to Romantic Versioning.
@@ -29,7 +31,9 @@ The concept of backwards compatibility differs from regular Node.js modules. Wit
 With every release, we will do a summary of the changes made. We will try to be as thorough as can be and will emphasize breaking changes and new features that may change how your app looks and feels.
 
 :::warning
+
 It is your responsibility to read through the release notes before updating and putting your app into production. You and your users may suffer as a result, if anything unexpected happens.
+
 :::
 
 ## Updating the base template
@@ -53,5 +57,7 @@ git merge upstream/master
 ```
 
 :::note
+
 Make sure you’re on the main development branch, e.g., `master` or `develop`, depending on your setup, when merging in the changes from the upstream repository.
+
 :::
