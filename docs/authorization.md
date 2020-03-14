@@ -17,7 +17,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <div style={{ textAlign: "center" }}>
-  <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/authentication.svg')} />
+  <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/authorization.svg')} />
   <h1>Authorization</h1>
   <p>
     There are mechanisms in place to protect content from unauthorized users
