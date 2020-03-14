@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
   <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/getting-started.svg')} />
   <h1>Getting Started</h1>
   <p>
-    It’s easy to create an app, especially if you’re already familiar with Create React App.
+    It’s easy to create an app, especially if you’re already familiar with Create React App
   </p>
 </div>
 
@@ -81,15 +81,9 @@ npm start
 </TabItem>
 </Tabs>
 
-:::tip
-
-You can override your default web browser by using the `BROWSER` environmment variable, e.g. `BROWSER=safari` if you want to use Safari. Depending on your setup, it might be ideal to create a `.env.local` file where you define environment variables unique to your local environment.
-
-:::
-
-Check the developer console of your browser for any errors and warnings, if it’s empty and everything’s working you can go ahead to the next page. However, if something’s not working, you could try following these steps:
+Check the developer console of your browser for any errors and warnings; if it’s empty and everything’s working, you can go ahead to the next page. However, if something’s not working, you could try following these steps:
 
 1. Use Google to search for any errors or warnings.
 2. Look for similar issues on the repository’s page on GitHub.
-3. Have a chat with us on [Discord](https://discord.gg/5Ann5C3), we’re always happy to help!
+3. Please have a chat with us on [Discord](https://discord.gg/5Ann5C3). We’re always happy to help!
 4. Create an issue on GitHub using the [Report a bug](https://github.com/rmuif/web/issues/new?template=bug_report.md) template.
