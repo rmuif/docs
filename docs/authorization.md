@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
   <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/authorization.svg')} />
   <h1>Authorization</h1>
   <p>
-    There are mechanisms in place to protect content from unauthorized users
+    There are mechanisms in place to protect content from unauthorized users.
   </p>
 </div>
 

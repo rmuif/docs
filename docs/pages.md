@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
   <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/pages.svg')} />
   <h1>Pages</h1>
   <p>
-    RMUIF uses React Router as its routing solution
+    RMUIF uses React Router as its routing solution.
   </p>
 </div>
 

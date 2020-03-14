@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
   <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/firebase.svg')} />
   <h1>Firebase</h1>
   <p>
-    Firebase is an integral part of RMUIF, with most of its products used in one place or another
+    Firebase is an integral part of RMUIF, with most of its products used in one place or another.
   </p>
 </div>
 

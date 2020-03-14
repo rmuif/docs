@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
   <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/scripts.svg')} />
   <h1>Scripts</h1>
   <p>
-    These scripts help you with developing, testing, building, and analyzing your app
+    These scripts help you with developing, testing, building, and analyzing your app.
   </p>
 </div>
 

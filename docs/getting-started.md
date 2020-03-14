@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
   <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/getting-started.svg')} />
   <h1>Getting Started</h1>
   <p>
-    It’s easy to create an app, especially if you’re already familiar with Create React App
+    It’s easy to create an app, especially if you’re already familiar with Create React App.
   </p>
 </div>
 

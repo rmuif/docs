@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
   <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/sentry.svg')} />
   <h1>Sentry</h1>
   <p>
-    Sentry is of great help when you put your app into the hands of your users
+    Sentry is of great help when you put your app into the hands of your users.
   </p>
 </div>
 

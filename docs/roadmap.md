@@ -17,7 +17,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/roadmap.svg')} />
   <h1>Roadmap</h1>
   <p>
-    There are more features coming to RMUIF, some are documented here, more might be added
+    There are more features coming to RMUIF, some are documented here, more might be added.
   </p>
 </div>
 

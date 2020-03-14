@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
   <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/authentication.svg')} />
   <h1>Authentication</h1>
   <p>
-    RMUIF uses Firebase Authentication in conjunction with Cloud Firestore to create, sign in, and manage users
+    RMUIF uses Firebase Authentication in conjunction with Cloud Firestore to create, sign in, and manage users.
   </p>
 </div>
 
