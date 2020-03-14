@@ -12,9 +12,13 @@ image: img/illustrations/roadmap.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-There are more features coming to RMUIF, some are documented here, more might be added. There’s also a chance that a feature will be postponed to a later version. When it comes to features, it will always be quality over quantity, and every feature is taken into careful consideration based on use-case and popularity.
-
-<img alt="Illustration" src={useBaseUrl('img/illustrations/roadmap.svg')} />
+<div style={{ textAlign: "center" }}>
+  <img style={{ width: "75%", marginBottom: "32px" }} alt="Illustration" src={useBaseUrl('img/illustrations/roadmap.svg')} />
+  <h1>Roadmap</h1>
+  <p>
+    There are more features coming to RMUIF, some are documented here, more might be added
+  </p>
+</div>
 
 ## Version 3.x
 
