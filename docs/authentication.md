@@ -78,7 +78,7 @@ Users can tie multiple authentication providers to their account by linking them
 
 ## Protecting content
 
-If you have access to the `user` object, you can check if the user is signed in or not. For example, in `HomeContent`, where we determine what to display based on whether or not the user exists:
+If you have access to the `user` object, you can check if the user is signed in or not. For example, in `HomePage`, where we determine what to display based on whether or not the user exists:
 
 ```jsx
 const { user } = this.props;
@@ -100,9 +100,7 @@ return (
 You might want to require the user to authenticate to be able to access specific routes, e.g., a settings page. You can take a look at the existing definitions in `Router`, where the `user` object is required:
 
 ```jsx
-<Route path="/user/:userId">
-  {user ? <UserContent /> : <Redirect to="/" />}
-</Route>
+<Route path="/user/:userId">{user ? <UserPage /> : <Redirect to="/" />}</Route>
 ```
 
 :::info
