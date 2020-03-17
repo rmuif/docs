@@ -53,6 +53,10 @@ module.exports = {
             {
               label: "Discord",
               href: "https://discord.gg/5Ann5C3"
+            },
+            {
+              label: "Twitter",
+              href: "https://twitter.com/rmuif"
             }
           ]
         },
