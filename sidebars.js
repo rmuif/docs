@@ -2,6 +2,10 @@ module.exports = {
   docs: [
     {
       type: "doc",
+      id: "introduction"
+    },
+    {
+      type: "doc",
       id: "getting-started"
     },
     {
