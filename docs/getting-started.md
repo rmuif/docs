@@ -7,7 +7,6 @@ keywords:
   - rmuif
   - docs
   - getting started
-image: img/illustrations/getting-started.png
 hide_title: true
 ---
 
