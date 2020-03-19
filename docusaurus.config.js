@@ -9,10 +9,10 @@ module.exports = {
   projectName: "docs",
   themeConfig: {
     navbar: {
-      title: "RMUIF",
       logo: {
         alt: "Logo",
-        src: "img/logo.svg"
+        src: "img/logo.svg",
+        srcDark: "img/logo-white-full.svg"
       },
       links: [
         {
