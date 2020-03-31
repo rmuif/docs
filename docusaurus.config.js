@@ -83,7 +83,7 @@ module.exports = {
           ]
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} RMUIF`
+      copyright: `Copyright © ${new Date().getFullYear()} RMUIF. This site is powered by <a href="https://www.netlify.com">Netlify</a>.`
     },
     googleAnalytics: {
       trackingID: "UA-141052606-2"
