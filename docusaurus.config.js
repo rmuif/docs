@@ -4,7 +4,7 @@ module.exports = {
     "Supercharged version of Create React App with all the bells and whistles",
   url: "https://docs.rmuif.com",
   baseUrl: "/",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.png",
   organizationName: "rmuif",
   projectName: "docs",
   themeConfig: {
