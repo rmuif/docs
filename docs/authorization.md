@@ -89,7 +89,7 @@ You can also use the API to restrict users from accessing a specific route. Take
 
 ```jsx
 <Route path="/admin">
-  {user && roles.includes("admin") ? <AdminContent /> : <Redirect to="/" />}
+  {user && roles.includes("admin") ? <AdminPage /> : <Redirect to="/" />}
 </Route>
 ```
 

@@ -53,6 +53,10 @@ module.exports = {
             {
               label: "Discord",
               href: "https://discord.gg/5Ann5C3"
+            },
+            {
+              label: "Twitter",
+              href: "https://twitter.com/rmuif"
             }
           ]
         },
@@ -62,11 +66,19 @@ module.exports = {
             {
               label: "GitHub",
               href: "https://github.com/rmuif/web"
+            },
+            {
+              label: "Contributing",
+              href: "https://github.com/rmuif/web/blob/master/CONTRIBUTING.md"
+            },
+            {
+              label: "Security",
+              href: "https://github.com/rmuif/web/blob/master/SECURITY.md"
             }
           ]
         }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} RMUIF`
+      copyright: `Copyright © ${new Date().getFullYear()} RMUIF. This site is powered by <a href="https://www.netlify.com">Netlify</a>.`
     },
     googleAnalytics: {
       trackingID: "UA-141052606-2"
