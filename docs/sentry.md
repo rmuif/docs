@@ -28,44 +28,29 @@ import TabItem from '@theme/TabItem';
 
 After you’ve completed setting up a project in Sentry, you’ll get a Data Source Name (DSN). It’s a representation of the configuration required by Sentry SDKs. It consists of a few pieces, including the protocol, public key, server address, and project identifier.
 
-You can set the DSN for your project in the `config` object of `package.json`, replace `https://<key>@sentry.io/<project>` with your DSN:
+You can set the DSN for your project in the `.env` file, replace `https://<key>@sentry.io/<project>` with your DSN:
 
 <Tabs
-defaultValue="package.json"
+defaultValue=".env"
 values={[
-{ label: 'package.json', value: 'package.json' }
+{ label: '.env', value: '.env' }
 ]
 }>
-<TabItem value="package.json">
+<TabItem value=".env">
 
-```json {22}
-{
-  ...
+```env {12}
+...
 
-  "config": {
-    "title": "RMUIF",
-    "theme": {
-      "primaryColor": "blue",
-      "secondaryColor": "red",
-      "dark": false
-    },
-    "firebase": {
-      "apiKey": "api-key",
-      "authDomain": "project-id.firebaseapp.com",
-      "databaseUrl": "https://project-id.firebaseio.com",
-      "projectId": "project-id",
-      "storageBucket": "project-id.appspot.com",
-      "messagingSenderId": "sender-id",
-      "appId": "app-id",
-      "measurementId": "G-measurement-id"
-    },
-    "sentry": {
-      "dsn": "https://<key>@sentry.io/<project>"
-    }
-  }
+REACT_APP_FIREBASE_API_KEY=api-key
+REACT_APP_FIREBASE_AUTH_DOMAIN=project-id.firebaseapp.com
+REACT_APP_FIREBASE_DATABASE_URL=https://project-id.firebaseio.com
+REACT_APP_FIREBASE_PROJECT_ID=project-id
+REACT_APP_FIREBASE_STORAGE_BUCKET=project-id.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=sender-id
+REACT_APP_FIREBASE_APP_ID=app-id
+REACT_APP_FIREBASE_MEASUREMENT_ID=G-measurement-id
 
-  ...
-}
+REACT_APP_SENTRY_DSN=https://<key>@sentry.io/<project>
 ```
 
 </TabItem>

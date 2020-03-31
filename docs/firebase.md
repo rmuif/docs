@@ -72,44 +72,29 @@ If you enable new Firebase services in your Firebase project after creating your
 
 :::
 
-When you’ve retrieved your Firebase config object, you need to replace the default one with your own. If the credentials above were your Firebase config object, the `firebase` object in `config` of `packge.json` would look like:
+When you’ve retrieved your Firebase config object, you need to replace the default one with your own. If the credentials above were your Firebase config object, the Firebase section in the `.env` file would look like:
 
 <Tabs
-defaultValue="package.json"
+defaultValue=".env"
 values={[
-{ label: 'package.json', value: 'package.json' }
+{ label: '.env', value: '.env' }
 ]
 }>
-<TabItem value="package.json">
+<TabItem value=".env">
 
-```json {12-19}
-{
-  ...
+```env {3-10}
+...
 
-  "config": {
-    "title": "RMUIF",
-    "theme": {
-      "primaryColor": "blue",
-      "secondaryColor": "red",
-      "dark": false
-    },
-    "firebase": {
-      "apiKey": "api-key",
-      "authDomain": "project-id.firebaseapp.com",
-      "databaseUrl": "https://project-id.firebaseio.com",
-      "projectId": "project-id",
-      "storageBucket": "project-id.appspot.com",
-      "messagingSenderId": "sender-id",
-      "appId": "app-id",
-      "measurementId": "G-measurement-id"
-    },
-    "sentry": {
-      "dsn": "https://78536326e6524916b6f44b4ea510b7a4@sentry.io/1846624"
-    }
-  }
+REACT_APP_FIREBASE_API_KEY=api-key
+REACT_APP_FIREBASE_AUTH_DOMAIN=project-id.firebaseapp.com
+REACT_APP_FIREBASE_DATABASE_URL=https://project-id.firebaseio.com
+REACT_APP_FIREBASE_PROJECT_ID=project-id
+REACT_APP_FIREBASE_STORAGE_BUCKET=project-id.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=sender-id
+REACT_APP_FIREBASE_APP_ID=app-id
+REACT_APP_FIREBASE_MEASUREMENT_ID=G-measurement-id
 
-  ...
-}
+...
 ```
 
 </TabItem>
