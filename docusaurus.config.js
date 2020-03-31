@@ -68,6 +68,11 @@ module.exports = {
               href: "https://github.com/rmuif/web"
             },
             {
+              label: "Code of Conduct",
+              href:
+                "https://github.com/rmuif/web/blob/master/CODE_OF_CONDUCT.md"
+            },
+            {
               label: "Contributing",
               href: "https://github.com/rmuif/web/blob/master/CONTRIBUTING.md"
             },
