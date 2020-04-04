@@ -12,20 +12,20 @@ module.exports = {
       logo: {
         alt: "Logo",
         src: "img/logo.svg",
-        srcDark: "img/logo-white.svg"
+        srcDark: "img/logo-white.svg",
       },
       links: [
         {
           label: "Discord",
           href: "https://discord.gg/5Ann5C3",
-          position: "right"
+          position: "right",
         },
         {
           label: "GitHub",
           href: "https://github.com/rmuif/web",
-          position: "right"
-        }
-      ]
+          position: "right",
+        },
+      ],
     },
     footer: {
       style: "dark",
@@ -35,60 +35,60 @@ module.exports = {
           items: [
             {
               label: "Getting Started",
-              to: "getting-started"
+              to: "getting-started",
             },
             {
               label: "Scripts",
-              to: "scripts"
+              to: "scripts",
             },
             {
               label: "Roadmap",
-              to: "roadmap"
-            }
-          ]
+              to: "roadmap",
+            },
+          ],
         },
         {
           title: "Community",
           items: [
             {
               label: "Discord",
-              href: "https://discord.gg/5Ann5C3"
+              href: "https://discord.gg/5Ann5C3",
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/rmuif"
-            }
-          ]
+              href: "https://twitter.com/rmuif",
+            },
+          ],
         },
         {
           title: "Project",
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/rmuif/web"
+              href: "https://github.com/rmuif/web",
             },
             {
               label: "Code of Conduct",
               href:
-                "https://github.com/rmuif/web/blob/master/CODE_OF_CONDUCT.md"
+                "https://github.com/rmuif/web/blob/master/CODE_OF_CONDUCT.md",
             },
             {
               label: "Contributing",
-              href: "https://github.com/rmuif/web/blob/master/CONTRIBUTING.md"
+              href: "https://github.com/rmuif/web/blob/master/CONTRIBUTING.md",
             },
             {
               label: "Security",
-              href: "https://github.com/rmuif/web/blob/master/SECURITY.md"
-            }
-          ]
-        }
+              href: "https://github.com/rmuif/web/blob/master/SECURITY.md",
+            },
+          ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} RMUIF. This site is powered by <a href="https://www.netlify.com">Netlify</a>.`
+      copyright: `Copyright © ${new Date().getFullYear()} RMUIF. This site is powered by <a href="https://www.netlify.com">Netlify</a>.`,
     },
     googleAnalytics: {
-      trackingID: "UA-141052606-2"
+      trackingID: "UA-141052606-2",
     },
-    image: "img/logo.png"
+    image: "img/logo.png",
   },
   plugins: ["@docusaurus/plugin-google-analytics"],
   presets: [
@@ -100,12 +100,12 @@ module.exports = {
           editUrl: "https://github.com/rmuif/docs/edit/master",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
-          routeBasePath: ""
+          routeBasePath: "",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css")
-        }
-      }
-    ]
-  ]
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+      },
+    ],
+  ],
 };

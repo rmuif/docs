@@ -2,25 +2,25 @@ module.exports = {
   docs: [
     {
       type: "doc",
-      id: "getting-started"
+      id: "getting-started",
     },
     {
       type: "doc",
-      id: "scripts"
+      id: "scripts",
     },
     {
       type: "category",
       label: "Configuration",
-      items: ["firebase", "sentry"]
+      items: ["firebase", "sentry"],
     },
     {
       type: "category",
       label: "Maintenance",
-      items: ["authentication", "authorization", "pages"]
+      items: ["authentication", "authorization", "pages"],
     },
     {
       type: "doc",
-      id: "roadmap"
-    }
-  ]
+      id: "roadmap",
+    },
+  ],
 };
