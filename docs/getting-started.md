@@ -60,7 +60,7 @@ cd my-app
 
 This command will start the app on http://localhost:3000 in your default web browser:
 
-<Tabs defaultValue="yarn" values={[{ label: "yarn", value: "yarn" },{ label: "npm", value: "npm" }]}>
+<Tabs groupId="package-managers" defaultValue="yarn" values={[{ label: "yarn", value: "yarn" },{ label: "npm", value: "npm" }]}>
 <TabItem value="yarn">
 
 ```sh
