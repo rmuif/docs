@@ -9,8 +9,8 @@
     "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-alpha.48",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.48",
+    "@docusaurus/core": "^2.0.0-alpha.50",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.50",
     "classnames": "^2.2.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
@@ -25,6 +25,21 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.1",
+    "prettier": "^2.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
     ]
   }
 }

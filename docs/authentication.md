@@ -120,6 +120,7 @@ The `user` program is for managing users individually, e.g., if you want to crea
 You don’t need to start the app if you want to create a new user. There are some cases where you would want to create a test or system user, and from the `user` tool you can do that. You can even set more properties than you can do from the Firebase Console. The following command starts a wizard where you can create your user:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -181,6 +182,7 @@ If you don’t provide a `uid`, Firebase generates a random one for you. A custo
 You can use the `user` tool to quickly get information from a user, e.g., their e-mail address or display name. Again, it’s very simple to use:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -206,6 +208,7 @@ npm run user get <uid>
 That’s nice if you know the ID of a user. But what if you don’t? You can use the `--email` or `-e` option to use an e-mail address instead of a user ID:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -237,6 +240,7 @@ The `-e` option is available for all commands with the `uid` argument in the `us
 An example of getting information from a user with the user ID `john`:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -282,6 +286,7 @@ The response might look like this:
 You can get the data of all users with one command using the `users` tool, the syntax is:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -325,6 +330,7 @@ The output is enormous if you have many users. To ensure proper formatting, you 
 You can also use the tool to update an existing user. This command starts a wizard where you choose which values you want to change:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -350,6 +356,7 @@ npm run user update <uid>
 Another example using the user `john`:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -401,6 +408,7 @@ The wizard comes with the current values as default. If you don’t want to chan
 If you’re ever in need of preventing someone from accessing your app, you can disable or ”ban“ their account. This command blocks them from signing in. The command, is as usual, straightforward:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -426,6 +434,7 @@ npm run user ban <uid>
 Banning the user `john` would look like:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -453,6 +462,7 @@ npm run user ban john
 If you want to enable a user again, you can lift their ban. This command allows them to sign in again. Use this clean command:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -478,6 +488,7 @@ npm run user unban <uid>
 If we wanted `john` back on, we could pardon him like:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -505,6 +516,7 @@ npm run user unban john
 Deleting a user is a dangerous activity as it implies severe consequences for the affected user. Think twice before using this command. You can use this command like:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -530,6 +542,7 @@ npm run user delete <uid>
 Deleting `john` would be dangerous but would also look like:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -563,6 +576,7 @@ Deleting a deletes any data associated with them, e.g., their documents in Cloud
 This command is very dangerous to execute. It deletes all users and their data in your app. You might have to use this command multiple times as Firebase limits the number of deletions. The tool will tell you if the limit has been exceeded. We are working to improve this tool further, but until now, that seems to be the only viable solution. You have to use the `users` tool when executing this command:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },

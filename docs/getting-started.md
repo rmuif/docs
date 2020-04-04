@@ -60,7 +60,7 @@ cd my-app
 
 This command will start the app on http://localhost:3000 in your default web browser:
 
-<Tabs defaultValue="yarn" values={[{ label: "yarn", value: "yarn" },{ label: "npm", value: "npm" }]}>
+<Tabs groupId="package-managers" defaultValue="yarn" values={[{ label: "yarn", value: "yarn" },{ label: "npm", value: "npm" }]}>
 <TabItem value="yarn">
 
 ```sh
@@ -82,4 +82,4 @@ Check the developer console of your browser for any errors and warnings; if it�
 1. Use Google to search for any errors or warnings.
 2. Look for similar issues on the repository’s page on GitHub.
 3. Please have a chat with us on [Discord](https://discord.gg/5Ann5C3). We’re always happy to help!
-4. Create an issue on GitHub using the [Report a bug](https://github.com/rmuif/web/issues/new?template=bug_report.md) template.
+4. Create an issue on GitHub using the [Bug report](https://github.com/rmuif/web/issues/new?template=bug_report.md) template.

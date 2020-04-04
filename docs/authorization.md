@@ -33,17 +33,17 @@ In the app, the resolution of roles happens in `App`:
 ```js
 authentication
   .getRoles()
-  .then(value => {
+  .then((value) => {
     this.setTheme(data.theme, () => {
       this.setState({
         ready: true,
         user: user,
         userData: data,
-        roles: value || []
+        roles: value || [],
       });
     });
   })
-  .catch(reason => {
+  .catch((reason) => {
     this.resetState(() => {
       const code = reason.code;
       const message = reason.message;
@@ -108,6 +108,7 @@ Usually, you would need to set up the Firebase Admin SDK and hack together somet
 If you need to set a user’s roles, we’ve got you covered. Although, note that the word _set_ was used instead of _add_. You are **setting** the user’s roles, not **adding** a role, i.e., this command overwrites the user’s existing roles:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -133,6 +134,7 @@ npm run roles set <uid> <roles>
 Also, like the `user` tool, you can use the `--email` or `-e` option to use an e-mail address instead of a user ID:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -158,6 +160,7 @@ npm run roles -e set <email> <roles>
 An example of setting the `admin` role for `john`:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -183,6 +186,7 @@ npm run roles set john admin
 By the way, the `roles` argument is comma-separated, i.e., you can set multiple roles at once:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -216,6 +220,7 @@ As stated before, the `set` command overwrites any existing roles. There might c
 You can also use the `roles` tool to get the existing roles of a user. They can come in handy when using `set`, making you aware of the current roles before you overwrite them. The command is simple and only requires a `uid` (or `email`):
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -241,6 +246,7 @@ npm run roles get <uid>
 Getting the roles of a user `john` would be:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -276,6 +282,7 @@ Which in turn would yield a result looking like:
 You can clear a user’s roles entirely by using the `remove` command. This command sets the `roles` array in the custom claims object to `null`. It looks like the `get` command:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
@@ -301,6 +308,7 @@ npm run roles remove <uid>
 Cleaning up the `john` user with:
 
 <Tabs
+groupId="package-managers"
 defaultValue="yarn"
 values={[
 { label: 'yarn', value: 'yarn' },
