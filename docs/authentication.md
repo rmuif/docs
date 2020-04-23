@@ -111,7 +111,7 @@ The value of the `user` object indicates whether or not a user is signed in. If 
 
 ## Managing users
 
-You can use the [Firebase Console](https://console.firebase.google.com) for essential user management, but it can be hard to use when performing operations such as deleting all of your users. RMUIF has its tools for managing individual users and users at scale. You can find these in the [CLI repository](https://github.com/rmuif/cli). Consult [this message](https://discordapp.com/channels/685891805258055732/685891805698326528/702005735097368680) if you have any problems.
+You can use the [Firebase Console](https://console.firebase.google.com) for essential user management, but it can be hard to use when performing operations such as deleting all of your users. RMUIF has its tools for managing individual users and users at scale. You can find these in the [CLI repository](https://github.com/rmuif/cli).
 
 The `user` program is for managing users individually, e.g., if you want to create, update, and delete a user. The `users` program is for performing operations on all users, e.g., listing or deleting all users.
 
