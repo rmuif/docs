@@ -90,7 +90,7 @@ module.exports = {
     },
     image: "img/logo.png",
   },
-  plugins: ["@docusaurus/plugin-google-analytics"],
+  plugins: [require.resolve("@docusaurus/plugin-google-analytics")],
   presets: [
     [
       "@docusaurus/preset-classic",
