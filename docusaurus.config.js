@@ -1,7 +1,7 @@
 module.exports = {
   title: "RMUIF",
   tagline:
-    "Supercharged version of Create React App with all the bells and whistles",
+    "Supercharged version of Create React App with all the bells and whistles.",
   url: "https://docs.rmuif.com",
   baseUrl: "/",
   favicon: "img/favicon.ico",
@@ -83,7 +83,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} RMUIF. This site is powered by <a href="https://www.netlify.com">Netlify</a>.`,
+      copyright: `Copyright © ${new Date().getFullYear()} RMUIF`,
     },
     googleAnalytics: {
       trackingID: "UA-141052606-2",
