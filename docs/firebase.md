@@ -202,6 +202,7 @@ service firebase.storage {
   function isAvatarValid() {
   	return (
     	request.resource.contentType.matches('image/.*') &&
+      request.resource.contentType != 'image/svg+xml' &&
       request.resource.size <= 20 * 1024 * 1024 &&
       (resource == null || request.resource.md5Hash != resource.md5Hash)
     );
